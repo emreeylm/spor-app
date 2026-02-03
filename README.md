@@ -1,45 +1,40 @@
-# MuscleWiki Exercise & Planner App
+# Spor Takip Uygulaması 🏋️‍♂️🍎
 
-A high-performance iOS app built with SwiftUI and SwiftData for exploring exercises and planning your workout and diet.
+Modern, sade ve tamamen kullanıcı odaklı bir fitness ve diyet asistanı. Karmaşadan uzak, sadece gelişiminize odaklanan şık bir deneyim sunar.
 
-## Features
+## Özellikler
 
-- **Keşfet (Explore)**: Browse exercises by muscle group using a grid view or an **interactive Body Map**.
-- **Interactive Anatomy**: Toggle between front and back views to select muscles visually.
-- **Video Streaming**: Watch exercise demonstration videos directly in the app.
-- **Programım (My Program)**: A 7-day workout planner to track your sets, reps, and weights.
-- **Diyet (Diet)**: A 7-day meal planner grouped by meal type (Breakfast, Lunch, etc.).
-- **Local Persistence**: All your plans are saved locally on your device using SwiftData.
+### 1. Haftalık Dashboard 🗓️
+Uygulama, haftanın 7 gününü kapsayan şık bir ızgara yapısıyla açılır. 
+- **Hızlı Bakış**: Her günün üzerinde o gün planlanan hareket sayısını veya alacağınız makro değerlerini anında görebilirsiniz.
+- **Kolay Navigasyon**: İstediğiniz güne dokunarak o günün detaylarına (antrenman veya diyet) saniyeler içinde ulaşın.
 
-## Tech Stack
+### 2. Akıllı Program Yönetimi 💪
+Karmaşık formlardan ve gereksiz veri girişlerinden kurtulun.
+- **Sadece Özellikler**: Unutun notları ve dinlenme sürelerini; sadece hareket adı, set ve tekrar sayısı.
+- **Görsel Hafıza**: Her harekete kendi fotoğrafınızı ekleyin, formunuzu asla unutmayın.
+- **Premium Kart Tasarımı**: Modern ve "Glassmorphic" kart yapısı ile antrenman listenizde gezinmek bir keyfe dönüşür.
 
-- **SwiftUI**: Modern declarative UI.
-- **SwiftData**: Native local persistence.
-- **URLSession**: Clean networking without external dependencies.
-- **AVKit**: High-quality video streaming.
+### 3. Makro Odaklı Diyet Takibi 🥗
+Kalori sayma stresine son!
+- **Saf Makro**: Sadece Protein (P), Karbonhidrat (K) ve Yağ (Y) değerlerine odaklanın.
+- **Görsel Özet**: Günlük toplam makro alımınızı şık, dairesel grafiklerle takip edin.
+- **Öğün Gruplandırma**: Kahvaltı, Öğle Yemeği, Akşam Yemeği ve Atıştırmalıklarınızı düzenli tutun.
 
-### 1. Explore (Keşfet)
-- **Muscle Selection**: Choose between a standard grid view or a **MuscleWiki-style interactive Body Map**.
-- **Interactive Anatomy**: Front and back views of the human body with selectable muscle regions.
-- **Exercise List**: Paginated list of exercises with thumbnails and target muscle information.
+### 4. Teknik Altyapı 🛠️
+- **SwiftUI**: Akıcı ve modern kullanıcı arayüzü.
+- **SwiftData**: Tüm verileriniz tamamen yerel olarak telefonunuzda saklanır (Gizlilik ön planda!).
+- **Hız ve Performans**: Dış bağımlılık olmadan, anında tepki veren native deneyim.
 
-## Setup Instructions
+## Kurulum
 
-1. **Clone the repository.**
-2. **Open `spor-app.xcodeproj` in Xcode 15+.**
-3. **Configure API Key**:
-    - Open `spor-app/Utils/Config.swift`.
-    - Replace `PUT_YOUR_KEY_HERE` with your [RapidAPI Key](https://rapidapi.com/musclewiki/api/musclewiki/).
-4. **Target Version**: Ensure your target device or simulator is running iOS 17.0 or later.
-5. **Run**: Select a simulator and press `Cmd + R`.
+1. Depoyu (repository) klonlayın.
+2. `spor-app.xcodeproj` dosyasını Xcode 15+ ile açın.
+3. Hedef cihazınızı (veya simülatörü) iOS 17.0+ olarak seçin.
+4. `Cmd + R` ile çalıştırın.
 
-## Implementation Details
+## Tasarım Dili
+Uygulama, **"Luxury Dark + Cream"** temasından esinlenilmiş, kırmızı aksanlar ve yumuşak gölgelerle zenginleştirilmiş premium bir tasarım diline sahiptir. Her etkileşimde kaliteyi hissettirir.
 
-- **MVVM Architecture**: Separates business logic from UI.
-- **Rich Aesthetics**: Custom components like `DayPickerView` and `MuscleCard` for a premium feel.
-- **Local-First**: The app works offline for Program and Diet tabs (Explore requires internet).
-
-## Notes
-
-- The app uses `MuscleWiki API`. If the API schema changes, update `ExerciseDTO.swift`.
-- SwiftData models are automatically migrated for minor changes.
+---
+Geliştirici: [Emre Yılmaz](https://github.com/emreeylm)
