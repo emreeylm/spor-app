@@ -1,10 +1,3 @@
-//
-//  spor_appApp.swift
-//  spor-app
-//
-//  Created by Emre Yılmaz on 2.02.2026.
-//
-
 import SwiftUI
 import SwiftData
 
@@ -12,7 +5,8 @@ import SwiftData
 struct spor_appApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            ProgramEntry.self,
+            DietEntry.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
